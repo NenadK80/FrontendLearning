@@ -1,0 +1,111 @@
+
+
+/* 0. GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif, serif;
+     width: 1200px;
+     margin: 0 auto;
+}
+
+
+header {
+    background-color: #80fef8;
+    color: pink;
+    padding: 20px;
+    text-align: right;
+}
+
+nav {
+    background-color: #a2b7d8;
+    
+}
+
+nav ul {
+    padding-left: 0px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    
+/*    width: 120px;
+    padding: 10px;
+    text-align: center;*/
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    
+    /* Umesto li stilizujemo a tag */
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li a:hover { 
+    background-color: #80fef8;
+    color: red;
+}
+
+/*Brišemo jer ne koristimo div sa id-jem main*/
+/*#main {
+    background-color: #fd89d7;
+}*/
+
+article {
+    /*background-color: #fcfe80;*/
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    padding: 30px;
+}
+
+aside {
+    background-color: #ccc;
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+    padding: 30px;
+}
+
+footer {
+    background-color: #80fef8;
+    color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+h1 {
+    color: red;
+    font-size: 30px;
+}
+
+h2 {
+    color: yellow;
+}
+
+p {
+    font-size: 12px;
+}
+
+/* mouse hover over every link */
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* visited link */
+a:visited {
+    color: #00FF00;
+}

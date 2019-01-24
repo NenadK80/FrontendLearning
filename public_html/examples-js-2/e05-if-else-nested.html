@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>If-else advanced</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <p>
+            Statistički podaci: 
+            <span id="statistics"></span>
+        </p>
+
+        <script type="text/javascript">
+            var name = 'Nenad'; //string
+            var surname = 'Kelečević'; //string
+            var gender = 'M'; //string M ili Z
+            var height = 153; // number vidth decimals
+            var statistika = name + " " + surname; //prazan string
+
+            if (gender == "M") {
+                if (height > 190) {
+                    statistika = statistika + " " + "je osoba muškog pola i on je nadprosečno visoka osoba";
+                } else if (height > 170) {
+                    statistika = statistika + " " + "je osoba muškog pola i on je prosečno visoka osoba";
+                } else {
+                    statistika = statistika + " " + "je osoba muškog pola i on je niska osoba";
+                }
+
+                console.log(statistika);
+            }
+            if (gender == "Z") {
+                if (height > 180) {
+                    statistika = statistika + " " + "je osoba ženskog pola i  ona je nadprosečno visoka osoba";
+                } else if (height > 155) {
+                    statistika = statistika + " " + "je osoba ženskog pola i  ona je prosečno visoka osoba";
+                } else {
+                    statistika = statistika + " " + "je osoba ženskog pola i  ona je niska osoba";
+                }
+                console.log(statistika);
+            }
+            document.getElementById('statistics').innerText = statistika;
+        </script>
+    </body>
+
+
+</html>
